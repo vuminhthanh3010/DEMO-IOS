@@ -26,43 +26,48 @@ class RegisterViewController: UIViewController {
         txtComfirmPassWordRegister.isSecureTextEntry    =   true
         btnRegister.layer.cornerRadius  =   8
         btnRegister.layer.borderWidth   =   0.5
-        
     }
     
+    //click button register
+    @IBAction func btnRegister(_ sender: Any) {
+        let userNameRegister             =   txtUserNameRegister.text!
+        let passWordRegister             =   txtPassWordRegister.text!
+        let comfirmpPassWordRegister     =   txtComfirmPassWordRegister.text!
+        if !userNameRegister.isEmpty && !passWordRegister.isEmpty && !comfirmpPassWordRegister.isEmpty{
+            if passWordRegister  == comfirmpPassWordRegister{
+                if UserDefaults.standard.string(forKey: userNameRegister) != nil{
+                    alert(title: "Tài khoản đã tồn tại, vui lòng chọn tên tài khoản khác")
+                }else{
+                    UserDefaults.standard.set(passWordRegister, forKey: userNameRegister)
+                    UserDefaults.standard.synchronize()
+                    nextScreen()
+                }
+            }else{
+                alert(title: "Mật khẩu không khớp, vui lòng nhập lại")
+            }
+            
+        }else{
+            alert(title: "Tên đăng nhập hoặc mật khẩu trống")
+        }
+    }
+    
+    // click button back
     @IBAction func btnBackHome(_ sender: Any) {
         nextScreen()
     }
-    @IBAction func btnRegister(_ sender: Any) {
-            let userNameRegister             =   txtUserNameRegister.text!
-            let passWordRegister             =   txtPassWordRegister.text!
-            let comfirmpPassWordRegister     =   txtComfirmPassWordRegister.text!
-            
-            if !userNameRegister.isEmpty && !passWordRegister.isEmpty && !comfirmpPassWordRegister.isEmpty{
-                if passWordRegister  == comfirmpPassWordRegister{
-                    UserDefaults.standard.set(userNameRegister, forKey: "username")
-                    UserDefaults.standard.set(passWordRegister, forKey: "password")
-                    UserDefaults.standard.synchronize()
-                    nextScreen()
-                    
-                    
-                }else{
-                    alert(title: "Mật khẩu không khớp, vui lòng nhập lại")
-                }
-                
-            }else{
-                alert(title: "Tên đăng nhập hoặc mật khẩu trống")
-            }
-    }
+    
+    // next storybroad
     func nextScreen(){
         let sb  =   UIStoryboard(name: "Main", bundle: nil)
         let nextSb  =   sb.instantiateViewController(withIdentifier: "home") as! ViewController
         present(nextSb, animated: true, completion: nil)
     }
+    
+    //alert notification
     func alert(title:String){
         let alert   =   UIAlertController(title: "Thông báo", message: title, preferredStyle: .alert)
         let btnOk   =   UIAlertAction(title: "OK", style: .default) { (ok) in}
         alert.addAction(btnOk)
         present(alert, animated: true, completion: nil)
     }
-
 }

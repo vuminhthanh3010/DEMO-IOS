@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtPassWord: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var btnRegister: UIButton!
-    var listAccount:[(username:String,password:String)] = [(username: "Thanh", password: "123"),(username: "Tuan", password: "456")]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         txtUserName.placeholder =   "Số điện thoại hoặc email"
@@ -26,33 +26,39 @@ class ViewController: UIViewController {
         btnLogin.layer.cornerRadius =   8
         btnRegister.layer.borderWidth  =   0.5
         btnRegister.layer.cornerRadius =   8
-        
-        if let username =   UserDefaults.standard.string(forKey: "username"), let password = UserDefaults.standard.string(forKey: "password"){
-            
-            listAccount.append((username: username, password: password))
-            print(listAccount)
-        }
     }
     
+    // click button login
     @IBAction func btnLogin(_ sender: Any) {
-        
         let userName    =   txtUserName.text!
         let passWord    =   txtPassWord.text!
         if !userName.isEmpty && !passWord.isEmpty{
-//            if userName == listAccount[0].username && passWord  ==  listAccount[0].password{
-//                nextScreen()
-//            }else{
-//                alert(title: "Tài khoản hoặc mật khẩu chưa đúng")
-//            }
-            
-            
-            
+            if let checkPass    =   UserDefaults.standard.string(forKey: userName),checkPass==passWord{
+                let alert   =   UIAlertController(title: "Thông báo", message: "Bạn đã đăng nhập thành công", preferredStyle: .alert)
+                let btnOk   =   UIAlertAction(title: "OK", style: .default) { (ok) in
+                    let sb  =   UIStoryboard(name: "Main", bundle: nil)
+                    let nextSb  =   sb.instantiateViewController(withIdentifier: "show") as! ShowAccountViewController
+                    UserDefaults.standard.set(userName, forKey: "showUserName")
+                    UserDefaults.standard.set(passWord, forKey: "showPassWord")
+                    UserDefaults.standard.synchronize()
+                    self.present(nextSb, animated: true, completion: nil)
+                }
+                alert.addAction(btnOk)
+                present(alert, animated: true, completion: nil)
+            }else{
+                alert(title: "Tài khoản hoặc mật khẩu chưa đúng")
+            }
         }else{
             alert(title: "Tên đăng nhập hoặc mật khẩu trống")
         }
     }
     
+    // click button register
+    @IBAction func btnRegister(_ sender: Any) {
+        nextScreen()
+    }
     
+    // alert notification
     func alert(title:String){
         let alert   =   UIAlertController(title: "Thông báo", message: title, preferredStyle: .alert)
         let btnOk   =   UIAlertAction(title: "OK", style: .default) { (ok) in}
@@ -60,9 +66,7 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 
-    @IBAction func btnRegister(_ sender: Any) {
-        nextScreen()
-    }
+    // next storybroad
     func nextScreen(){
         let sb  =   UIStoryboard(name: "Main", bundle: nil)
         let nextSb  =   sb.instantiateViewController(withIdentifier: "register") as! RegisterViewController

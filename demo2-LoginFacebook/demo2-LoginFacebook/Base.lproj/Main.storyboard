@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-443" y="-573"/>
+            <point key="canvasLocation" x="-481" y="-853"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="KWV-Rp-W8O">
@@ -149,7 +149,7 @@
                                 <rect key="frame" x="50" y="571" width="314" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Đăng nhập">
+                                <state key="normal" title="Đăng ký">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -202,7 +202,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPR-30-Joe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="-573"/>
+            <point key="canvasLocation" x="246" y="-853"/>
+        </scene>
+        <!--Show Account View Controller-->
+        <scene sceneID="jHo-rU-vRG">
+            <objects>
+                <viewController storyboardIdentifier="show" id="0rE-Rr-fcm" customClass="ShowAccountViewController" customModule="demo2_LoginFacebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ffe-2u-KWx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="ZY4-cn-zp1">
+                                <rect key="frame" x="0.0" y="-4" width="414" height="269"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG TIN TÀI KHOẢN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8k-7J-k9I">
+                                <rect key="frame" x="0.0" y="295" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zDt-bb-9XS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên tài khoản:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2a-Rl-emv">
+                                <rect key="frame" x="50" y="362" width="121" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkG-Cb-Af2">
+                                <rect key="frame" x="235" y="372" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="B3W-Cn-0Nm"/>
+                                    <constraint firstAttribute="width" constant="150" id="sQ6-7X-1Kq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsj-Kt-Ezv">
+                                <rect key="frame" x="50" y="412" width="121" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOD-9G-kuF">
+                                <rect key="frame" x="235" y="422" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVL-oZ-FSW">
+                                <rect key="frame" x="161" y="790" width="96" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="F0G-dx-8QV"/>
+                                    <constraint firstAttribute="height" constant="36" id="Orl-hX-d4g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Đăng xuất"/>
+                                <connections>
+                                    <action selector="btnLogout:" destination="0rE-Rr-fcm" eventType="touchUpInside" id="SNI-zL-R9T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RVL-oZ-FSW" firstAttribute="leading" secondItem="Hep-IU-c5d" secondAttribute="leading" constant="161" id="0AY-dQ-tu9"/>
+                            <constraint firstItem="vOD-9G-kuF" firstAttribute="top" secondItem="RkG-Cb-Af2" secondAttribute="bottom" constant="29" id="2iU-jY-qDb"/>
+                            <constraint firstItem="Hep-IU-c5d" firstAttribute="bottom" secondItem="y2a-Rl-emv" secondAttribute="bottom" constant="460" id="4NN-E4-YYu"/>
+                            <constraint firstItem="C8k-7J-k9I" firstAttribute="width" secondItem="ffe-2u-KWx" secondAttribute="width" id="5P1-Sz-b5R"/>
+                            <constraint firstItem="Lsj-Kt-Ezv" firstAttribute="height" secondItem="y2a-Rl-emv" secondAttribute="height" id="Crl-Km-zlx"/>
+                            <constraint firstItem="ZY4-cn-zp1" firstAttribute="top" secondItem="ffe-2u-KWx" secondAttribute="top" constant="-4" id="DyS-dL-h8I"/>
+                            <constraint firstItem="y2a-Rl-emv" firstAttribute="top" secondItem="C8k-7J-k9I" secondAttribute="bottom" constant="27" id="I2P-X6-al5"/>
+                            <constraint firstItem="y2a-Rl-emv" firstAttribute="leading" secondItem="Hep-IU-c5d" secondAttribute="leading" constant="50" id="MNY-rK-ijL"/>
+                            <constraint firstItem="C8k-7J-k9I" firstAttribute="top" secondItem="ZY4-cn-zp1" secondAttribute="bottom" constant="30" id="OWC-bP-sAU"/>
+                            <constraint firstItem="vOD-9G-kuF" firstAttribute="height" secondItem="RkG-Cb-Af2" secondAttribute="height" id="Tdf-lz-U5T"/>
+                            <constraint firstItem="Hep-IU-c5d" firstAttribute="bottom" secondItem="ZY4-cn-zp1" secondAttribute="bottom" constant="597" id="Tw8-U8-Fo3"/>
+                            <constraint firstItem="RkG-Cb-Af2" firstAttribute="top" secondItem="C8k-7J-k9I" secondAttribute="bottom" constant="37" id="Wzi-KN-1GZ"/>
+                            <constraint firstItem="Hep-IU-c5d" firstAttribute="trailing" secondItem="y2a-Rl-emv" secondAttribute="trailing" constant="243" id="ayY-Xl-EVK"/>
+                            <constraint firstItem="vOD-9G-kuF" firstAttribute="width" secondItem="RkG-Cb-Af2" secondAttribute="width" id="cj9-Yl-B4r"/>
+                            <constraint firstItem="ZY4-cn-zp1" firstAttribute="trailing" secondItem="Hep-IU-c5d" secondAttribute="trailing" id="eGb-4z-uEk"/>
+                            <constraint firstItem="Lsj-Kt-Ezv" firstAttribute="width" secondItem="y2a-Rl-emv" secondAttribute="width" id="eXn-2D-bmD"/>
+                            <constraint firstItem="Hep-IU-c5d" firstAttribute="bottom" secondItem="RVL-oZ-FSW" secondAttribute="bottom" constant="36" id="iVd-cs-hYf"/>
+                            <constraint firstItem="RkG-Cb-Af2" firstAttribute="leading" secondItem="y2a-Rl-emv" secondAttribute="trailing" constant="64" id="owU-tK-t7G"/>
+                            <constraint firstItem="ZY4-cn-zp1" firstAttribute="leading" secondItem="Hep-IU-c5d" secondAttribute="leading" id="s6s-Rh-dml"/>
+                            <constraint firstItem="Lsj-Kt-Ezv" firstAttribute="top" secondItem="y2a-Rl-emv" secondAttribute="bottom" constant="10" id="vW0-Gk-xNv"/>
+                            <constraint firstItem="C8k-7J-k9I" firstAttribute="centerX" secondItem="Hep-IU-c5d" secondAttribute="centerX" id="xDI-e6-59S"/>
+                            <constraint firstItem="vOD-9G-kuF" firstAttribute="leading" secondItem="RkG-Cb-Af2" secondAttribute="leading" id="zAc-1s-mc5"/>
+                            <constraint firstItem="Lsj-Kt-Ezv" firstAttribute="leading" secondItem="y2a-Rl-emv" secondAttribute="leading" id="zON-Zq-glr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hep-IU-c5d"/>
+                    </view>
+                    <connections>
+                        <outlet property="showPass" destination="vOD-9G-kuF" id="SZj-P5-ggA"/>
+                        <outlet property="showUser" destination="RkG-Cb-Af2" id="wYn-ng-Jm7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDh-gy-Pii" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="-853"/>
         </scene>
     </scenes>
     <resources>

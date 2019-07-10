@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA4A0FD322D587BA002FF0C5 /* ShowAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A0FD222D587BA002FF0C5 /* ShowAccountViewController.swift */; };
 		EAD84D5622D481D1007686A6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD84D5522D481D1007686A6 /* RegisterViewController.swift */; };
 		EAF5D21822D4391E00CA3256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF5D21722D4391E00CA3256 /* AppDelegate.swift */; };
 		EAF5D21A22D4391E00CA3256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF5D21922D4391E00CA3256 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA4A0FD222D587BA002FF0C5 /* ShowAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAccountViewController.swift; sourceTree = "<group>"; };
 		EAD84D5522D481D1007686A6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EAF5D21422D4391E00CA3256 /* demo2-LoginFacebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo2-LoginFacebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF5D21722D4391E00CA3256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				EAF5D22022D4392000CA3256 /* LaunchScreen.storyboard */,
 				EAF5D22322D4392000CA3256 /* Info.plist */,
 				EAD84D5522D481D1007686A6 /* RegisterViewController.swift */,
+				EA4A0FD222D587BA002FF0C5 /* ShowAccountViewController.swift */,
 			);
 			path = "demo2-LoginFacebook";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				EAD84D5622D481D1007686A6 /* RegisterViewController.swift in Sources */,
 				EAF5D21A22D4391E00CA3256 /* ViewController.swift in Sources */,
 				EAF5D21822D4391E00CA3256 /* AppDelegate.swift in Sources */,
+				EA4A0FD322D587BA002FF0C5 /* ShowAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
