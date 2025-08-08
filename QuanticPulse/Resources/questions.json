@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Beginner Beat",
+    "difficulty": 1,
+    "pulseSpeedSeconds": 1.0,
+    "totalPulsesPerQuestion": 5,
+    "questions": [
+      {"id": 101, "numIcons": 5, "targetIconIndex": 3, "targetPulseNumber": 3, "fakePulses": {"1": [2,4], "2": [1], "4": [5], "5": [2,4]}, "hints": ["Tap icon #3 on pulse #3", "Watch the sequence"], "options": ["Tap #3 at pulse #3", "Tap #2 at pulse #1", "Tap #4 at pulse #5", "Tap #1 at pulse #2"], "correctOptionIndex": 0},
+      {"id": 102, "numIcons": 5, "targetIconIndex": 2, "targetPulseNumber": 4, "fakePulses": {"1": [1,3], "2": [5], "3": [2], "5": [4]}, "hints": ["Stay focused", "Target pulse is later"], "options": ["Tap #2 at pulse #4", "Tap #5 at pulse #2", "Tap #3 at pulse #1", "Tap #1 at pulse #5"], "correctOptionIndex": 0},
+      {"id": 103, "numIcons": 6, "targetIconIndex": 5, "targetPulseNumber": 2, "fakePulses": {"1": [1,4], "3": [2,3], "4": [6]}, "hints": ["Quick reaction needed"], "options": ["Tap #5 at pulse #2", "Tap #4 at pulse #3", "Tap #2 at pulse #5", "Tap #1 at pulse #1"], "correctOptionIndex": 0},
+      {"id": 104, "numIcons": 5, "targetIconIndex": 1, "targetPulseNumber": 5, "fakePulses": {"1": [2], "2": [3], "3": [4], "4": [5]}, "hints": ["Final beat"], "options": ["Tap #1 at pulse #5", "Tap #5 at pulse #4", "Tap #3 at pulse #2", "Tap #2 at pulse #1"], "correctOptionIndex": 0},
+      {"id": 105, "numIcons": 5, "targetIconIndex": 4, "targetPulseNumber": 1, "fakePulses": {"2": [1,2], "3": [3], "5": [5]}, "hints": ["Immediate start"], "options": ["Tap #4 at pulse #1", "Tap #2 at pulse #3", "Tap #1 at pulse #2", "Tap #3 at pulse #5"], "correctOptionIndex": 0}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Swift Sync",
+    "difficulty": 2,
+    "pulseSpeedSeconds": 0.8,
+    "totalPulsesPerQuestion": 6,
+    "questions": [
+      {"id": 201, "numIcons": 6, "targetIconIndex": 2, "targetPulseNumber": 3, "fakePulses": {"1": [1,4], "2": [3], "4": [2,5], "5": [6]}, "hints": ["Beware of fakes"], "options": ["Tap #2 at pulse #3", "Tap #4 at pulse #4", "Tap #5 at pulse #6", "Tap #1 at pulse #2"], "correctOptionIndex": 0},
+      {"id": 202, "numIcons": 6, "targetIconIndex": 6, "targetPulseNumber": 5, "fakePulses": {"1": [2], "2": [4], "3": [1,3], "4": [5]}, "hints": ["Late target"], "options": ["Tap #6 at pulse #5", "Tap #5 at pulse #3", "Tap #2 at pulse #2", "Tap #3 at pulse #1"], "correctOptionIndex": 0},
+      {"id": 203, "numIcons": 7, "targetIconIndex": 3, "targetPulseNumber": 2, "fakePulses": {"1": [2,4,6], "3": [1,5], "4": [3], "6": [7]}, "hints": ["Second beat"], "options": ["Tap #3 at pulse #2", "Tap #1 at pulse #1", "Tap #5 at pulse #4", "Tap #7 at pulse #6"], "correctOptionIndex": 0},
+      {"id": 204, "numIcons": 6, "targetIconIndex": 4, "targetPulseNumber": 4, "fakePulses": {"1": [1], "2": [2,3], "3": [6], "5": [5]}, "hints": ["Middle pulse"], "options": ["Tap #4 at pulse #4", "Tap #2 at pulse #2", "Tap #6 at pulse #3", "Tap #1 at pulse #5"], "correctOptionIndex": 0},
+      {"id": 205, "numIcons": 6, "targetIconIndex": 5, "targetPulseNumber": 1, "fakePulses": {"2": [2,4], "3": [3], "5": [1,6]}, "hints": ["Instant"], "options": ["Tap #5 at pulse #1", "Tap #4 at pulse #2", "Tap #2 at pulse #5", "Tap #3 at pulse #6"], "correctOptionIndex": 0}
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tempo Master",
+    "difficulty": 3,
+    "pulseSpeedSeconds": 0.6,
+    "totalPulsesPerQuestion": 7,
+    "questions": [
+      {"id": 301, "numIcons": 7, "targetIconIndex": 7, "targetPulseNumber": 6, "fakePulses": {"1": [2,5], "2": [3], "3": [1,4], "5": [6]}, "hints": ["Almost last"], "options": ["Tap #7 at pulse #6", "Tap #6 at pulse #5", "Tap #4 at pulse #3", "Tap #2 at pulse #1"], "correctOptionIndex": 0},
+      {"id": 302, "numIcons": 7, "targetIconIndex": 1, "targetPulseNumber": 2, "fakePulses": {"1": [3,4], "2": [2], "3": [5,6], "4": [7]}, "hints": ["Early"], "options": ["Tap #1 at pulse #2", "Tap #3 at pulse #3", "Tap #5 at pulse #5", "Tap #7 at pulse #7"], "correctOptionIndex": 0},
+      {"id": 303, "numIcons": 7, "targetIconIndex": 4, "targetPulseNumber": 3, "fakePulses": {"1": [2], "2": [4,6], "3": [1,5], "4": [7]}, "hints": ["Tricky"], "options": ["Tap #4 at pulse #3", "Tap #2 at pulse #2", "Tap #6 at pulse #4", "Tap #5 at pulse #6"], "correctOptionIndex": 0},
+      {"id": 304, "numIcons": 7, "targetIconIndex": 5, "targetPulseNumber": 5, "fakePulses": {"1": [1,3], "2": [2], "4": [4], "6": [6]}, "hints": ["On the dot"], "options": ["Tap #5 at pulse #5", "Tap #3 at pulse #3", "Tap #2 at pulse #2", "Tap #1 at pulse #1"], "correctOptionIndex": 0},
+      {"id": 305, "numIcons": 7, "targetIconIndex": 2, "targetPulseNumber": 1, "fakePulses": {"2": [3,4], "3": [1,5], "5": [6]}, "hints": ["Now!"], "options": ["Tap #2 at pulse #1", "Tap #4 at pulse #2", "Tap #1 at pulse #3", "Tap #7 at pulse #6"], "correctOptionIndex": 0}
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Quantum Rush",
+    "difficulty": 4,
+    "pulseSpeedSeconds": 0.5,
+    "totalPulsesPerQuestion": 8,
+    "questions": [
+      {"id": 401, "numIcons": 7, "targetIconIndex": 6, "targetPulseNumber": 7, "fakePulses": {"1": [2,4,6], "2": [1,3], "3": [5], "4": [7]}, "hints": ["Final sprint"], "options": ["Tap #6 at pulse #7", "Tap #4 at pulse #6", "Tap #3 at pulse #5", "Tap #1 at pulse #4"], "correctOptionIndex": 0},
+      {"id": 402, "numIcons": 7, "targetIconIndex": 3, "targetPulseNumber": 4, "fakePulses": {"1": [1,2], "2": [6], "3": [5], "5": [7]}, "hints": ["Middle maze"], "options": ["Tap #3 at pulse #4", "Tap #6 at pulse #3", "Tap #5 at pulse #2", "Tap #2 at pulse #1"], "correctOptionIndex": 0},
+      {"id": 403, "numIcons": 7, "targetIconIndex": 2, "targetPulseNumber": 2, "fakePulses": {"1": [4], "3": [1,5], "4": [6], "6": [7]}, "hints": ["Double down"], "options": ["Tap #2 at pulse #2", "Tap #4 at pulse #4", "Tap #6 at pulse #6", "Tap #1 at pulse #1"], "correctOptionIndex": 0},
+      {"id": 404, "numIcons": 7, "targetIconIndex": 5, "targetPulseNumber": 6, "fakePulses": {"1": [2], "2": [3,4], "4": [1], "6": [7]}, "hints": ["Late trick"], "options": ["Tap #5 at pulse #6", "Tap #4 at pulse #5", "Tap #3 at pulse #3", "Tap #2 at pulse #2"], "correctOptionIndex": 0},
+      {"id": 405, "numIcons": 7, "targetIconIndex": 1, "targetPulseNumber": 1, "fakePulses": {"2": [2,3], "3": [4,5], "5": [6,7]}, "hints": ["Start strong"], "options": ["Tap #1 at pulse #1", "Tap #3 at pulse #2", "Tap #4 at pulse #3", "Tap #5 at pulse #4"], "correctOptionIndex": 0}
+    ]
+  }
+]
