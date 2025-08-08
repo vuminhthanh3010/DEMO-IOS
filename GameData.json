@@ -1,0 +1,324 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "name": "Beginner Pulse",
+      "description": "Learn the basic rhythm",
+      "difficulty": "Easy",
+      "pulseSpeed": 1.0,
+      "totalQuestions": 5,
+      "timePerQuestion": 15,
+      "pointsPerCorrect": 10,
+      "questions": [
+        {
+          "id": 1,
+          "instruction": "Tap icon 3 when it lights up at pulse 2",
+          "targetIcon": 3,
+          "targetPulse": 2,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 5]},
+            {"pulse": 2, "lightedIcons": [3]},
+            {"pulse": 3, "lightedIcons": [2, 4]},
+            {"pulse": 4, "lightedIcons": [1, 3, 5]}
+          ],
+          "fakeIcons": []
+        },
+        {
+          "id": 2,
+          "instruction": "Tap icon 1 when it lights up at pulse 3",
+          "targetIcon": 1,
+          "targetPulse": 3,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [2, 4]},
+            {"pulse": 2, "lightedIcons": [5]},
+            {"pulse": 3, "lightedIcons": [1]},
+            {"pulse": 4, "lightedIcons": [3, 4]}
+          ],
+          "fakeIcons": []
+        },
+        {
+          "id": 3,
+          "instruction": "Tap icon 4 when it lights up at pulse 1",
+          "targetIcon": 4,
+          "targetPulse": 1,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [4]},
+            {"pulse": 2, "lightedIcons": [1, 3]},
+            {"pulse": 3, "lightedIcons": [2, 5]},
+            {"pulse": 4, "lightedIcons": [1, 4]}
+          ],
+          "fakeIcons": []
+        },
+        {
+          "id": 4,
+          "instruction": "Tap icon 2 when it lights up at pulse 4",
+          "targetIcon": 2,
+          "targetPulse": 4,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 5]},
+            {"pulse": 2, "lightedIcons": [3, 4]},
+            {"pulse": 3, "lightedIcons": [1]},
+            {"pulse": 4, "lightedIcons": [2]}
+          ],
+          "fakeIcons": []
+        },
+        {
+          "id": 5,
+          "instruction": "Tap icon 5 when it lights up at pulse 3",
+          "targetIcon": 5,
+          "targetPulse": 3,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 2]},
+            {"pulse": 2, "lightedIcons": [3, 4]},
+            {"pulse": 3, "lightedIcons": [5]},
+            {"pulse": 4, "lightedIcons": [1, 3]}
+          ],
+          "fakeIcons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rhythm Master",
+      "description": "Faster pulses and tricky patterns",
+      "difficulty": "Medium",
+      "pulseSpeed": 0.8,
+      "totalQuestions": 7,
+      "timePerQuestion": 20,
+      "pointsPerCorrect": 15,
+      "questions": [
+        {
+          "id": 6,
+          "instruction": "Tap icon 3 at pulse 2 (ignore fake lights)",
+          "targetIcon": 3,
+          "targetPulse": 2,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 4, 5]},
+            {"pulse": 2, "lightedIcons": [3]},
+            {"pulse": 3, "lightedIcons": [2, 4]},
+            {"pulse": 4, "lightedIcons": [1, 5]}
+          ],
+          "fakeIcons": [{"icon": 3, "pulse": 1}]
+        },
+        {
+          "id": 7,
+          "instruction": "Tap icon 1 at pulse 4 (watch for fakes)",
+          "targetIcon": 1,
+          "targetPulse": 4,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [2, 3]},
+            {"pulse": 2, "lightedIcons": [4, 5]},
+            {"pulse": 3, "lightedIcons": [2]},
+            {"pulse": 4, "lightedIcons": [1]}
+          ],
+          "fakeIcons": [{"icon": 1, "pulse": 2}]
+        },
+        {
+          "id": 8,
+          "instruction": "Tap icon 5 at pulse 1 (be precise)",
+          "targetIcon": 5,
+          "targetPulse": 1,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [5]},
+            {"pulse": 2, "lightedIcons": [1, 3]},
+            {"pulse": 3, "lightedIcons": [2, 4]},
+            {"pulse": 4, "lightedIcons": [3, 5]}
+          ],
+          "fakeIcons": []
+        },
+        {
+          "id": 9,
+          "instruction": "Tap icon 2 at pulse 3 (multiple distractions)",
+          "targetIcon": 2,
+          "targetPulse": 3,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 4]},
+            {"pulse": 2, "lightedIcons": [3, 5]},
+            {"pulse": 3, "lightedIcons": [2]},
+            {"pulse": 4, "lightedIcons": [1, 4, 5]}
+          ],
+          "fakeIcons": [{"icon": 2, "pulse": 1}, {"icon": 2, "pulse": 4}]
+        },
+        {
+          "id": 10,
+          "instruction": "Tap icon 4 at pulse 2 (rapid sequence)",
+          "targetIcon": 4,
+          "targetPulse": 2,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 2, 3]},
+            {"pulse": 2, "lightedIcons": [4]},
+            {"pulse": 3, "lightedIcons": [5]},
+            {"pulse": 4, "lightedIcons": [1, 2]}
+          ],
+          "fakeIcons": [{"icon": 4, "pulse": 3}]
+        },
+        {
+          "id": 11,
+          "instruction": "Tap icon 1 at pulse 4 (complex pattern)",
+          "targetIcon": 1,
+          "targetPulse": 4,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [2, 5]},
+            {"pulse": 2, "lightedIcons": [3, 4]},
+            {"pulse": 3, "lightedIcons": [2, 3, 5]},
+            {"pulse": 4, "lightedIcons": [1]}
+          ],
+          "fakeIcons": [{"icon": 1, "pulse": 1}]
+        },
+        {
+          "id": 12,
+          "instruction": "Tap icon 3 at pulse 3 (synchronized)",
+          "targetIcon": 3,
+          "targetPulse": 3,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 4]},
+            {"pulse": 2, "lightedIcons": [2, 5]},
+            {"pulse": 3, "lightedIcons": [3]},
+            {"pulse": 4, "lightedIcons": [4, 5]}
+          ],
+          "fakeIcons": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pulse Expert",
+      "description": "Ultimate rhythm challenge",
+      "difficulty": "Hard",
+      "pulseSpeed": 0.6,
+      "totalQuestions": 8,
+      "timePerQuestion": 25,
+      "pointsPerCorrect": 25,
+      "questions": [
+        {
+          "id": 13,
+          "instruction": "Tap icon 2 at pulse 3 (expert timing)",
+          "targetIcon": 2,
+          "targetPulse": 3,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 3, 5]},
+            {"pulse": 2, "lightedIcons": [4]},
+            {"pulse": 3, "lightedIcons": [2]},
+            {"pulse": 4, "lightedIcons": [1, 4, 5]},
+            {"pulse": 5, "lightedIcons": [3]}
+          ],
+          "fakeIcons": [{"icon": 2, "pulse": 1}, {"icon": 2, "pulse": 5}]
+        },
+        {
+          "id": 14,
+          "instruction": "Tap icon 5 at pulse 4 (master level)",
+          "targetIcon": 5,
+          "targetPulse": 4,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 2]},
+            {"pulse": 2, "lightedIcons": [3, 4]},
+            {"pulse": 3, "lightedIcons": [1, 3]},
+            {"pulse": 4, "lightedIcons": [5]},
+            {"pulse": 5, "lightedIcons": [2, 4]}
+          ],
+          "fakeIcons": [{"icon": 5, "pulse": 2}]
+        },
+        {
+          "id": 15,
+          "instruction": "Tap icon 1 at pulse 2 (lightning fast)",
+          "targetIcon": 1,
+          "targetPulse": 2,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [3, 4, 5]},
+            {"pulse": 2, "lightedIcons": [1]},
+            {"pulse": 3, "lightedIcons": [2, 5]},
+            {"pulse": 4, "lightedIcons": [3, 4]},
+            {"pulse": 5, "lightedIcons": [2]}
+          ],
+          "fakeIcons": [{"icon": 1, "pulse": 4}]
+        },
+        {
+          "id": 16,
+          "instruction": "Tap icon 4 at pulse 5 (endurance test)",
+          "targetIcon": 4,
+          "targetPulse": 5,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 2, 3]},
+            {"pulse": 2, "lightedIcons": [5]},
+            {"pulse": 3, "lightedIcons": [1, 3]},
+            {"pulse": 4, "lightedIcons": [2]},
+            {"pulse": 5, "lightedIcons": [4]}
+          ],
+          "fakeIcons": [{"icon": 4, "pulse": 1}, {"icon": 4, "pulse": 3}]
+        },
+        {
+          "id": 17,
+          "instruction": "Tap icon 3 at pulse 1 (instant reaction)",
+          "targetIcon": 3,
+          "targetPulse": 1,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [3]},
+            {"pulse": 2, "lightedIcons": [1, 4, 5]},
+            {"pulse": 3, "lightedIcons": [2]},
+            {"pulse": 4, "lightedIcons": [1, 5]},
+            {"pulse": 5, "lightedIcons": [4]}
+          ],
+          "fakeIcons": []
+        },
+        {
+          "id": 18,
+          "instruction": "Tap icon 2 at pulse 4 (precision master)",
+          "targetIcon": 2,
+          "targetPulse": 4,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 5]},
+            {"pulse": 2, "lightedIcons": [3, 4]},
+            {"pulse": 3, "lightedIcons": [1]},
+            {"pulse": 4, "lightedIcons": [2]},
+            {"pulse": 5, "lightedIcons": [3, 5]}
+          ],
+          "fakeIcons": [{"icon": 2, "pulse": 2}]
+        },
+        {
+          "id": 19,
+          "instruction": "Tap icon 5 at pulse 3 (rhythm god)",
+          "targetIcon": 5,
+          "targetPulse": 3,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [1, 2, 4]},
+            {"pulse": 2, "lightedIcons": [3]},
+            {"pulse": 3, "lightedIcons": [5]},
+            {"pulse": 4, "lightedIcons": [1, 2]},
+            {"pulse": 5, "lightedIcons": [4]}
+          ],
+          "fakeIcons": [{"icon": 5, "pulse": 1}, {"icon": 5, "pulse": 5}]
+        },
+        {
+          "id": 20,
+          "instruction": "Tap icon 1 at pulse 5 (ultimate challenge)",
+          "targetIcon": 1,
+          "targetPulse": 5,
+          "pulsePattern": [
+            {"pulse": 1, "lightedIcons": [2, 3, 4]},
+            {"pulse": 2, "lightedIcons": [5]},
+            {"pulse": 3, "lightedIcons": [2, 4]},
+            {"pulse": 4, "lightedIcons": [3]},
+            {"pulse": 5, "lightedIcons": [1]}
+          ],
+          "fakeIcons": [{"icon": 1, "pulse": 2}, {"icon": 1, "pulse": 3}]
+        }
+      ]
+    }
+  ],
+  "gameSettings": {
+    "totalIcons": 5,
+    "iconTypes": ["circle", "star", "heart", "diamond", "triangle"],
+    "colors": {
+      "normal": "#4A5568",
+      "highlighted": "#F6E05E",
+      "selected": "#48BB78",
+      "fake": "#FEB2B2"
+    },
+    "animations": {
+      "pulseInDuration": 0.3,
+      "pulseOutDuration": 0.2,
+      "correctFeedback": "bounce",
+      "wrongFeedback": "shake"
+    }
+  }
+}
